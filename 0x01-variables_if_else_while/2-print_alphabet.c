@@ -1,4 +1,4 @@
-tqask 2 #include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - prints the alphabet in lowercase,
