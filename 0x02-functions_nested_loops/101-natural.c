@@ -1,71 +1,24 @@
 #include <stdio.h>
 
-
-
 /**
- *
- *  * main - sums 3-5_cous - Entry point
- *
- *   *
- *
- *    * Return:  (0)
- *
- *     */
-
-
+ * main - Prints the sum of all multiples of 3 or 5 up to 102
+ * Return: Always (Success)
+ */
 
 int main(void)
 
 {
-
-		int i = 0;
-
-			int m3 = 3;
-
-				int m5 = 5;
-
-					int sum = 0;
-
-						int lim = 1024;
-
-
-
-							while (i == 0)
-
-									{
-
-
-
-												if (m3 < lim)
-
-															{
-
-																			sum += m3;
-
-																						m3 += 3;
-
-																								}
-
-
-
-														if (m5 < lim && (m5 % 3) != 0)
-
-																	{
-
-																					sum += m5;
-
-																								m5 += 5;
-
-																										}
-
-																else if (m5 % 3 == 0)
-m5 += 5;
-}
-if (m3 >= lim && m5 >= lim)
+int i, z = 0;
+while (i < 1024)
 {
-i = 1;
+if ((i % 3 == 0) || (i % 5 == 0))
+{
+z += i;
 }
+i++;
 }
-printf("%d\n", sum);
+printf("%d\n", z);
+
 return (0);
+
 }
